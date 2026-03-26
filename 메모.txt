@@ -1,0 +1,50 @@
+0326 수업
+
+질문등을 관리하고 싶다 == 구글폼
+이쁘게 하고싶다 == 스트림릿
+
+구글폼
+배포아이디
+AKfycbxnLFUXEE17M4zSqViNQHuPLRWcFKWqvA6-sBP-jkyvwtd9a1LZTUYTo_ED2pFKhmNl7w
+
+URL
+https://script.google.com/macros/s/AKfycbxnLFUXEE17M4zSqViNQHuPLRWcFKWqvA6-sBP-jkyvwtd9a1LZTUYTo_ED2pFKhmNl7w/exec
+
+
+
+
+프롬프트
+아니, 그냥 구글폼이 아니라 구글시트로 하려고 왜냐면, 파이썬 스트림릿으로 출력하고 응답결과도 같은 구글시트 파일에서 볼라고
+이거 구글시트로 만들어줘. 스트림릿으로 가져와서 출력하려고해
+
+에러---고급---어케든 실행 !!
+
+구글폼의 Apps Script 이걸로 구글시트도 만들수 있음. 관리도구인듯
+피부 고민 설문조사 시스템 (Streamlit 연동용)이라는 구글시트가 만들어졌음
+Apps Script --> 구글시트의 확장프로그램탭에도 있고, js파일은 여기에서 연 AS에 붙여넣는게 맞는듯...
+구글시트에 [설문조사 관리-->구글폼 업데이트하기(동기화)]라는 버튼이 생겼음 <--AS가 만들었을듯
+성공! 이 뜨면... 기존의 구글폼(LLM)이 피부고민으로 변경되었음...
+
+
+구글폼을 파이썬으로 관리는 곤란
+구글시트는 파이썬으로 관리하기 좋음
+
+실행단계에서 위험한 앱...나오면 고급--> 승인 (체크박스가 있으면 모두 OK)
+
+form_sheet_python
+var FORM_ID = '1iEnFV8pk3ZdXcn6-393m8urRZq75Apk_BeZL5bdE0g0'; 
+내 배포아이디로 전환
+
+streamlit run form.py
+
+시각화를 위해 더미데이터를 만들어줘.
+
+stepbystep.py
+뒤로 못도망가게 계속 순차적으로 진행하도록 만들어져있음.
+
+slidestep.py
+카드형 뒤로도 갈수있음 ---> 즉각적인 그 사람의 진짜 니즈파악은 곤란할수 있음
+
+style.py
+둥근 입력창등등
+style.css에서 컨트롤
